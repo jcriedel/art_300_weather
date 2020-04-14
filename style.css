@@ -1,0 +1,83 @@
+body{
+    background-color: #e0e0df;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 20px;
+}
+.header{
+    margin-left: 5%;
+    margin-bottom: 50px;
+    width: 80vw;
+    height: 100px;
+    display: grid;
+    outline: solid black 5px;
+    text-align: left;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 20px 1fr;
+    grid-template-areas: 
+    "stripe stripe" 
+    "logo echo";
+}
+.logo{
+    grid-area: logo;
+    color: #e65e25;
+}
+.echo{
+    grid-area: echo;
+    color: #cec3c1;
+}
+.stripe{
+    background-color: #cec3c1;
+    grid-area: stripe;
+}
+.maininfo {
+    padding: 20px;
+    margin-left: 5%;
+    width: 40vw;
+    height: 400px;
+    display: grid;
+    outline: solid black 5px;
+    text-align: left;
+    min-width: 500px;
+    grid-template-columns: 1fr 2fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 2fr 1fr;
+    grid-template-areas: 
+      "data data data ."
+      "largeicon largeicon current ."
+      "largeicon largeicon highlow highlow"
+      "description description description description";
+}
+.data{
+    background-color: #e0e0df;
+    grid-area: data;
+    padding-left: 20px;
+}
+.largeicon{
+    background-color: #e65e25;
+    grid-area: largeicon;
+    display: flex;
+    justify-content: center;
+    border: solid black 5px;
+}
+.current{
+    background-color: #e0e0df;;
+    grid-area: current;
+    padding-left: 20px;
+    color: #e65e25;
+    font-size: 1.5em;
+}
+.description{
+    background-color: #e0e0df;
+    grid-area: description;
+    padding-left: 20px;
+}
+.highlow{
+    background-color: #e0e0df;
+    grid-area: highlow;
+    padding-left: 20px;
+    font-size: 1.5em;
+}
+img{
+    display: block;
+    margin: auto;
+    border: solid black 5px;
+}
